@@ -233,12 +233,11 @@
                     </div>
                     <span class="fw-light">Free shipping on all your order.</span>
                   </div>
-                  <button
-                    class="d-none d-sm-block btn btn-primary d-flex align-items-center rounded-5 gap-2 border-0 w-25 justify-content-center fw-semibold"
-                    type="button">
+                  <a href="./pages/shop.html"
+                    class="d-none d-sm-block btn btn-primary d-flex align-items-center rounded-5 gap-2 border-0 w-25 justify-content-center fw-semibold">
                     <span>Shop now</span>
                     <i class="fa-solid fa-arrow-right"></i>
-                  </button>
+                  </a>
                   <a href="./pages/shop.html"
                     class="h-link d-flex align-items-center gap-2 justify-content-sm-start justify-content-center d-sm-none">
                     <span>Shop now</span>
@@ -307,12 +306,11 @@
                   </div>
                   <span class="fw-light">Free shipping on all your order.</span>
                 </div>
-                <button
-                  class="btn btn-primary d-flex align-items-center rounded-5 gap-2 border-0 w-25 justify-content-center fw-semibold"
-                  type="button">
+                <a href="./pages/shop.html"
+                  class="btn btn-primary d-flex align-items-center rounded-5 gap-2 border-0 w-25 justify-content-center fw-semibold">
                   <span>Shop now</span>
                   <i class="fa-solid fa-arrow-right"></i>
-                </button>
+                </a>
               </div>
             </div>
           </div>
@@ -349,14 +347,14 @@
         </div>
       </div>
     </section>
-    <section class="services p-4">
-      <div class="container-fluid container-lg p-sm-4 p-1 rounded-2">
+    <section class="services py-4">
+      <div class="container-fluid container-lg py-sm-4 py-1 rounded-2">
         <div class="row align-items-center justify-content-between row-gap-5">
           <div class="col-lg-3 col-sm-6 col-12">
             <div class="service d-flex align-items-center gap-3">
               <img src="./assests/img/services/fast-shipping.svg" alt="fast shipping" class="img-fluid">
               <div class="service-info">
-                <h5>Free Shipping</h5>
+                <h3 class="fs-6">Free Shipping</h3>
                 <span>Free shipping on all your order</span>
               </div>
             </div>
@@ -365,7 +363,7 @@
             <div class="service d-flex align-items-center gap-3">
               <img src="./assests/img/services/headset.svg" alt="24/7 support" class="img-fluid">
               <div class="service-info d-flex gap-1 flex-column">
-                <h5>Customer Support 24/7</h5>
+                <h3 class="fs-6">Customer Support 24/7</h3>
                 <span>Instant access to Support</span>
               </div>
             </div>
@@ -374,7 +372,7 @@
             <div class="service d-flex align-items-center gap-3">
               <img src="./assests/img/services/shopping-bag.svg" alt="secure payment" class="img-fluid">
               <div class="service-info">
-                <h5>100% Secure Payment</h5>
+                <h3 class="fs-6">100% Secure Payment</h3>
                 <span>We ensure your money is save</span>
               </div>
             </div>
@@ -383,7 +381,7 @@
             <div class="service d-flex align-items-center gap-1 gap-md-3 gap-sm-2 ">
               <img src="./assests/img/services/box.svg" alt="money back guarantee" class="img-fluid">
               <div class="service-info">
-                <h5>Money-Back Guarantee</h5>
+                <h3 class="fs-6">Money-Back Guarantee</h3>
                 <span>30 Days Money-Back Guarantee</span>
               </div>
             </div>
@@ -393,114 +391,297 @@
     </section>
     <section class="popular-categories py-3">
       <div class="container-fluid container-lg">
-        <div class=" py-3 popular-c-top d-flex justify-content-between flex-column flex-sm-row text-center text-sm-start align-items-center">
+        <div
+          class=" py-3 popular-c-top d-flex justify-content-between flex-column flex-sm-row text-center text-sm-start align-items-center">
           <h2>Popular Categories</h2>
-          <a href="./pages/shop.html" class="h-link p-0 d-flex align-items-center gap-2 justify-content-start shadow-none ">
-                    <span>View All</span>
-                    <i class="fa-solid fa-arrow-right"></i>
-                  </a>
+          <a href="./pages/shop.html"
+            class="h-link p-0 d-flex align-items-center gap-2 justify-content-start shadow-none ">
+            <span>View All</span>
+            <i class="fa-solid fa-arrow-right"></i>
+          </a>
         </div>
-        <!-- i wanted to make it overflow-x but i have a lot of pages to do :) -->
+        <!-- i wanted to make it overflow-x to be more useful responsive but i have a lot of pages to do :) -->
         <div class="row row-gap-3">
           <div class="col-xxl-2 col-lg-3 col-sm-4 col-6 card-1">
             <a href="./pages/shop.html" class="card text-center">
-            <img src="./assests/img/popular categories/fruit.webp" class="card-img-top object-fit-contain" alt="fresh fruits">
-            <div class="card-body">
-              <h6  class="text-capitalize fw-medium">fresh fruits</h6>
-            </div>
-          </a>
+              <img src="./assests/img/popular-categories/fruit.webp" class="card-img-top object-fit-contain"
+                alt="fresh fruits">
+              <div class="card-body">
+                <h3 class="text-capitalize fw-medium fs-6">fresh fruits</h3>
+              </div>
+            </a>
           </div>
           <div class="col-xxl-2 col-lg-3 col-sm-4 col-6 card-2">
             <a href="./pages/shop.html" class="card text-center">
-            <img src="./assests/img/popular categories/vegetables.webp" class="card-img-top object-fit-contain" alt="fresh vegetables">
-            <div class="card-body px-1">
-              <h6 href="./pages/shop.html" class="text-capitalize fw-medium">fresh vegetables</h6>
-            </div>
-          </a>
+              <img src="./assests/img/popular-categories/vegetables.webp" class="card-img-top object-fit-contain"
+                alt="fresh vegetables">
+              <div class="card-body px-1">
+                <h3 href="./pages/shop.html" class="text-capitalize fw-medium fs-6">fresh vegetables</h3>
+              </div>
+            </a>
           </div>
           <div class="col-xxl-2 col-lg-3 col-sm-4  d-none d-sm-block">
             <a href="./pages/shop.html" class="card text-center">
-            <img src="./assests/img/popular categories/meat.webp" class="card-img-top object-fit-contain" alt="fresh meats">
-            <div class="card-body">
-              <h6 href="./pages/shop.html" class="text-capitalize fw-medium">meat & fish</h6>
-            </div>
-          </a>
+              <img src="./assests/img/popular-categories/meat.webp" class="card-img-top object-fit-contain"
+                alt="fresh meats">
+              <div class="card-body">
+                <h3 href="./pages/shop.html" class="text-capitalize fw-medium fs-6">meat & fish</h3>
+              </div>
+            </a>
           </div>
           <div class="col-xxl-2 col-lg-3 d-none d-lg-block">
             <div class="card text-center">
-            <img src="./assests/img/popular categories/snacks.webp" class="card-img-top object-fit-contain" alt="snacks">
-            <div class="card-body">
-              <h6 href="./pages/shop.html" class="text-capitalize fw-medium">snacks</h6>
+              <img src="./assests/img/popular-categories/snacks.webp" class="card-img-top object-fit-contain"
+                alt="snacks">
+              <div class="card-body">
+                <h3 href="./pages/shop.html" class="text-capitalize fw-medium fs-6">snacks</h3>
+              </div>
             </div>
-          </div>
           </div>
           <div class="col-xxl-2 col-lg-3 d-none d-lg-block">
             <a href="./pages/shop.html" class="card text-center">
-            <img src="./assests/img/popular categories/drinks.webp" class="card-img-top object-fit-contain" alt="beverages">
-            <div class="card-body">
-              <h6 href="./pages/shop.html" class="text-capitalize fw-medium">beverages</h6>
-            </div>
-          </a>
+              <img src="./assests/img/popular-categories/drinks.webp" class="card-img-top object-fit-contain"
+                alt="beverages">
+              <div class="card-body">
+                <h3 href="./pages/shop.html" class="text-capitalize fw-medium fs-6">beverages</h3>
+              </div>
+            </a>
           </div>
           <div class="col-xxl-2 col-lg-3 d-none d-lg-block">
             <a href="./pages/shop.html" class="card text-center">
-            <img src="./assests/img/popular categories/skin-care.webp" class="card-img-top object-fit-contain" alt="skin care products">
-            <div class="card-body">
-              <h6 href="./pages/shop.html" class="text-capitalize fw-medium">beauty & health</h6>
-            </div>
-          </a>
+              <img src="./assests/img/popular-categories/skin-care.webp" class="card-img-top object-fit-contain"
+                alt="skin care products">
+              <div class="card-body">
+                <h3 href="./pages/shop.html" class="text-capitalize fw-medium fs-6">beauty & health</h3>
+              </div>
+            </a>
           </div>
           <div class="col-xxl-2 col-lg-3 d-none d-lg-block">
             <a href="./pages/shop.html" class="card text-center">
-            <img src="./assests/img/popular categories/bakery.webp" class="card-img-top object-fit-contain" alt="baking">
-            <div class="card-body">
-              <h6 href="./pages/shop.html" class="text-capitalize fw-medium">bread & bakery</h6>
-            </div>
-          </a>
+              <img src="./assests/img/popular-categories/bakery.webp" class="card-img-top object-fit-contain"
+                alt="baking">
+              <div class="card-body">
+                <h3 href="./pages/shop.html" class="text-capitalize fw-medium fs-6">bread & bakery</h3>
+              </div>
+            </a>
           </div>
           <div class="col-xxl-2 col-lg-3 d-none d-lg-block">
             <a href="./pages/shop.html" class="card text-center">
-            <img src="./assests/img/popular categories/baking-goods.webp" class="card-img-top object-fit-contain" alt="baking needs">
-            <div class="card-body">
-              <h6 href="./pages/shop.html" class="text-capitalize fw-medium">baking needs</h6>
-            </div>
-          </a>
+              <img src="./assests/img/popular-categories/baking-goods.webp" class="card-img-top object-fit-contain"
+                alt="baking needs">
+              <div class="card-body">
+                <h3 href="./pages/shop.html" class="text-capitalize fw-medium fs-6">baking needs</h3>
+              </div>
+            </a>
           </div>
           <div class="col-xxl-2 d-none d-xxl-block">
             <a href="./pages/shop.html" class="card text-center">
-            <img src="./assests/img/popular categories/cooking.webp" class="card-img-top object-fit-contain" alt="cooking products">
-            <div class="card-body">
-              <h6 href="./pages/shop.html" class="text-capitalize fw-medium">cooking</h6>
-            </div>
-          </a>
+              <img src="./assests/img/popular-categories/cooking.webp" class="card-img-top object-fit-contain"
+                alt="cooking products">
+              <div class="card-body">
+                <h3 href="./pages/shop.html" class="text-capitalize fw-medium fs-6">cooking</h3>
+              </div>
+            </a>
           </div>
           <div class="col-xxl-2  d-none d-xxl-block">
             <a href="./pages/shop.html" class="card text-center">
-            <img src="./assests/img/popular categories/diabetic-food.webp" class="card-img-top object-fit-contain" alt="diabetic food">
-            <div class="card-body">
-              <h6 href="./pages/shop.html" class="text-capitalize fw-medium">diabetic food</h6>
-            </div>
-          </a>
+              <img src="./assests/img/popular-categories/diabetic-food.webp" class="card-img-top object-fit-contain"
+                alt="diabetic food">
+              <div class="card-body">
+                <h3 href="./pages/shop.html" class="text-capitalize fw-medium fs-6">diabetic food</h3>
+              </div>
+            </a>
           </div>
           <div class="col-xxl-2 d-none d-xxl-block">
             <a href="./pages/shop.html" class="card text-center">
-            <img src="./assests/img/popular categories/cleaning.webp" class="card-img-top object-fit-contain" alt="cleaning-products">
-            <div class="card-body">
-              <h6 href="./pages/shop.html" class="text-capitalize fw-medium">Dish Detergents</h6>
-            </div>
-          </a>
+              <img src="./assests/img/popular-categories/cleaning.webp" class="card-img-top object-fit-contain"
+                alt="cleaning-products">
+              <div class="card-body">
+                <h3 href="./pages/shop.html" class="text-capitalize fw-medium fs-6">Dish Detergents</h3>
+              </div>
+            </a>
           </div>
-          
+
           <div class="col-xxl-2 d-none d-xxl-block">
             <a href="./pages/shop.html" class="card text-center">
-            <img src="./assests/img/popular categories/oil.webp" class="card-img-top object-fit-contain" alt="oil">
-            <div class="card-body">
-              <h6 href="./pages/shop.html" class="text-capitalize fw-medium">oil</h6>
-            </div>
-          </a>
+              <img src="./assests/img/popular-categories/oil.webp" class="card-img-top object-fit-contain" alt="oil">
+              <div class="card-body">
+                <h3 href="./pages/shop.html" class="text-capitalize fw-medium fs-6">oil</h3>
+              </div>
+            </a>
           </div>
-          
+
         </div>
+      </div>
+    </section>
+    <section class="popular-products py-3">
+      <div class="container-fluid container-lg">
+        <div
+          class=" py-3 popular-c-top d-flex justify-content-between flex-column flex-sm-row text-center text-sm-start align-items-center">
+          <h2>Popular Products</h2>
+          <a href="./pages/shop.html"
+            class="h-link p-0 d-flex align-items-center gap-2 justify-content-start shadow-none">
+            <span>View All</span>
+            <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
+        <div class="row m-0">
+          <div class="col px-0">
+            <div class="card position-relative rounded-0">
+              <span class="text-capitalize position-absolute sale-span py-1 px-2 rounded-1 text-white z-1">sale
+                50%</span>
+              <div class="card-sh-btns position-absolute  flex-column gap-1 z-2 align-items-center">
+                <button class=" shopping-btns rounded-circle d-flex align-items-center justify-content-center p-1 ">
+                  <i class="fa-solid fa-heart d-flex align-items-center justify-content-center"></i>
+                </button>
+                <button class=" shopping-btns rounded-circle d-flex align-items-center justify-content-center p-1 ">
+                  <i class="fa-solid fa-eye d-flex align-items-center justify-content-center"></i>
+                </button>
+              </div>
+              <img src="./assests/img/popular-products/apple.webp" class="card-img-top object-fit-contain" alt="apple">
+              <div class="card-body d-flex align-items-center justify-content-between">
+                <div class="left-body">
+                  <h3 class="card-text text-capitalize fw-normal fs-6 m-0">
+                    green apple
+                  </h3>
+                  <div class="price-span">
+                    <span class="fw-medium">$14.99</span>
+                    <span class="old-price">$20.99</span>
+                  </div>
+                  <div class="r-stars">
+                    <i class="fa-solid fa-star one-star"></i>
+                    <i class="fa-solid fa-star two-stars"></i>
+                    <i class="fa-solid fa-star three-stars"></i>
+                    <i class="fa-solid fa-star four-stars"></i>
+                    <i class="fa-solid fa-star five-stars"></i>
+                  </div>
+                </div>
+                <div class="right-body">
+                  <a href="./pages/shop.html"
+                    class="shopping-btns rounded-circle d-flex align-items-center justify-content-center p-1 border-0">
+                    <i class="fa-solid fa-bag-shopping d-flex align-items-center justify-content-center"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col px-0">
+            <div class="card position-relative rounded-0">
+              <div class=" card-sh-btns position-absolute flex-column gap-1 z-2 align-items-center">
+              <button class=" shopping-btns rounded-circle d-flex align-items-center justify-content-center p-1 ">
+                <i class="fa-solid fa-heart d-flex align-items-center justify-content-center"></i>
+              </button>
+              <button class=" shopping-btns rounded-circle d-flex align-items-center justify-content-center p-1 ">
+                <i class="fa-solid fa-eye d-flex align-items-center justify-content-center"></i>
+              </button>
+            </div>
+            <img src="./assests/img/popular-products/apple.webp" class="card-img-top object-fit-contain" alt="apple">
+            <div class="card-body d-flex align-items-center justify-content-between">
+              <div class="left-body">
+                <h3 class="card-text text-capitalize fw-normal fs-6 m-0">
+                  green apple
+                </h3>
+                <div class="price-span">
+                  <span class="fw-medium">$14.99</span>
+                  <span class="old-price">$20.99</span>
+                </div>
+                <div class="r-stars">
+                  <i class="fa-solid fa-star one-star"></i>
+                  <i class="fa-solid fa-star two-stars"></i>
+                  <i class="fa-solid fa-star three-stars"></i>
+                  <i class="fa-solid fa-star four-stars"></i>
+                  <i class="fa-solid fa-star five-stars"></i>
+                </div>
+              </div>
+              <div class="right-body">
+                <a href="./pages/shop.html"
+                  class="shopping-btns rounded-circle d-flex align-items-center justify-content-center p-1 border-0">
+                  <i class="fa-solid fa-bag-shopping d-flex align-items-center justify-content-center"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row m-0">
+      <div class="col px-0">
+            <div class="card position-relative rounded-0">
+              <span class="text-capitalize position-absolute sale-span py-1 px-2 rounded-1 text-white z-1">sale
+                50%</span>
+              <div class="card-sh-btns position-absolute  flex-column gap-1 z-2 align-items-center">
+                <button class=" shopping-btns rounded-circle d-flex align-items-center justify-content-center p-1 ">
+                  <i class="fa-solid fa-heart d-flex align-items-center justify-content-center"></i>
+                </button>
+                <button class=" shopping-btns rounded-circle d-flex align-items-center justify-content-center p-1 ">
+                  <i class="fa-solid fa-eye d-flex align-items-center justify-content-center"></i>
+                </button>
+              </div>
+              <img src="./assests/img/popular-products/apple.webp" class="card-img-top object-fit-contain" alt="apple">
+              <div class="card-body d-flex align-items-center justify-content-between">
+                <div class="left-body">
+                  <h3 class="card-text text-capitalize fw-normal fs-6 m-0">
+                    green apple
+                  </h3>
+                  <div class="price-span">
+                    <span class="fw-medium">$14.99</span>
+                    <span class="old-price">$20.99</span>
+                  </div>
+                  <div class="r-stars">
+                    <i class="fa-solid fa-star one-star"></i>
+                    <i class="fa-solid fa-star two-stars"></i>
+                    <i class="fa-solid fa-star three-stars"></i>
+                    <i class="fa-solid fa-star four-stars"></i>
+                    <i class="fa-solid fa-star five-stars"></i>
+                  </div>
+                </div>
+                <div class="right-body">
+                  <a href="./pages/shop.html"
+                    class="shopping-btns rounded-circle d-flex align-items-center justify-content-center p-1 border-0">
+                    <i class="fa-solid fa-bag-shopping d-flex align-items-center justify-content-center"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        <div class="col px-0">
+          <div class="card position-relative rounded-0">
+              <div class="card-sh-btns position-absolute flex-column gap-1 z-2 align-items-center">
+            <button class="shopping-btns rounded-circle d-flex align-items-center justify-content-center p-1">
+              <i class="fa-solid fa-heart d-flex align-items-center justify-content-center"></i>
+            </button>
+            <button class="shopping-btns rounded-circle d-flex align-items-center justify-content-center p-1">
+              <i class="fa-solid fa-eye d-flex align-items-center justify-content-center"></i>
+            </button>
+          </div>
+          <img src="./assests/img/popular-products/apple.webp" class="card-img-top object-fit-contain" alt="apple">
+          <div class="card-body d-flex align-items-center justify-content-between">
+            <div class="left-body">
+              <h3 class="card-text text-capitalize fw-normal fs-6 m-0">
+                green apple
+              </h3>
+              <div class="price-span">
+                <span class="fw-medium">$14.99</span>
+                <span class="old-price">$20.99</span>
+              </div>
+              <div class="r-stars">
+                <i class="fa-solid fa-star one-star"></i>
+                <i class="fa-solid fa-star two-stars"></i>
+                <i class="fa-solid fa-star three-stars"></i>
+                <i class="fa-solid fa-star four-stars"></i>
+                <i class="fa-solid fa-star five-stars"></i>
+              </div>
+            </div>
+            <div class="right-body">
+              <a href="./pages/shop.html"
+                class="shopping-btns rounded-circle d-flex align-items-center justify-content-center p-1 border-0">
+                <i class="fa-solid fa-bag-shopping d-flex align-items-center justify-content-center"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      </div>
       </div>
     </section>
   </main>
@@ -527,18 +708,18 @@
                   id="button-addon2">Subscribe</button>
               </div>
               <div class="social-media d-flex align-items-center gap-md-5 gap-3 gap-lg-3 ">
-                <div class="social rounded-circle d-flex align-items-center justify-content-center p-2">
+                <a href="#" class="social rounded-circle d-flex align-items-center justify-content-center p-2">
                   <i class="fa-brands fa-facebook-f d-flex align-items-center justify-content-center"></i>
-                </div>
-                <div class="social rounded-circle d-flex align-items-center justify-content-center p-2">
+                </a>
+                <a href="#" class="social rounded-circle d-flex align-items-center justify-content-center p-2">
                   <i class="fa-brands fa-twitter d-flex align-items-center justify-content-center"></i>
-                </div>
-                <div class="social rounded-circle d-flex align-items-center justify-content-center p-2">
+                </a>
+                <a href="#" class="social rounded-circle d-flex align-items-center justify-content-center p-2">
                   <i class="fa-brands fa-pinterest-p d-flex align-items-center justify-content-center"></i>
-                </div>
-                <div class="social rounded-circle d-flex align-items-center justify-content-center p-2">
+                </a>
+                <a href="#" class="social rounded-circle d-flex align-items-center justify-content-center p-2">
                   <i class="fa-brands fa-instagram d-flex align-items-center justify-content-center"></i>
-                </div>
+                </a>
               </div>
             </div>
           </div>
@@ -563,7 +744,7 @@
             </div>
           </div>
           <div
-            class="row col-lg-8  rightside-bf align-items-center justify-content-between flex-column flex-sm-row gap-3 gap-sm-0">
+            class="row col-lg-8 rightside-bf align-items-start justify-content-between flex-column flex-sm-row gap-3 gap-sm-0">
             <div class="col-lg-3 col-sm-6 col-12 mb-sm-3 ">
               <nav
                 class="nav1 d-flex flex-column p-0 gap-4 align-items-center align-items-lg-start text-center text-lg-start">
@@ -586,7 +767,7 @@
             </div>
             <div class="col-lg-3 col-sm-6 col-12 mb-sm-3">
               <nav
-                class="nav1 d-flex flex-column p-0 gap-4 align-items-center align-items-lg-start text-center textv-start">
+                class="nav1 d-flex flex-column p-0 gap-4 align-items-center align-items-lg-start text-center text-lg-start">
                 <p class="text-white m-0">Help</p>
                 <ul class="nav flex-column gap-3">
                   <li class="nav-item">
@@ -651,12 +832,12 @@
           <div class="rights">
             <span>Ecobazar eCommerce © 2021. All Rights Reserved</span>
           </div>
-          <div class="payment-methods d-flex align-items-center gap-2 flex-wrap">
-            <img src="./assests/img/payment methods/Method=ApplePay.svg" alt="Apple pay" />
-            <img src="./assests/img/payment methods/Method=Visa.svg" alt="Visa" />
-            <img src="./assests/img/payment methods/Method=Discover.svg" alt="Discover" />
-            <img src="./assests/img/payment methods/Method=Mastercard.svg" alt="Mastercard" />
-            <img src="./assests/img/payment methods/secure.svg" alt="Payment secure" />
+          <div class="payment-methods d-flex align-items-center justify-content-center gap-2 flex-wrap">
+            <img src="./assests/img/payment-methods/Method=ApplePay.svg" alt="Apple pay" />
+            <img src="./assests/img/payment-methods/Method=Visa.svg" alt="Visa" />
+            <img src="./assests/img/payment-methods/Method=Discover.svg" alt="Discover" />
+            <img src="./assests/img/payment-methods/Method=Mastercard.svg" alt="Mastercard" />
+            <img src="./assests/img/payment-methods/secure.svg" alt="Payment secure" />
           </div>
         </div>
       </div>
