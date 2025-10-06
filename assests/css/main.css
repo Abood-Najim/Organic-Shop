@@ -555,6 +555,105 @@ hr{
     padding-top: 2.2rem !important;
 }
 }
+.banner-info {
+  width: 40%;
+  top:10%;
+  right:0;
+}
+.banner-info .sale-head .discount{
+  color: var(--warning);
+}
+.banner-info .banner-span{
+  color: #fff;
+  opacity: 70%;
+  width: 80%;
+}
+.banner .btn-primary {
+  --bs-btn-color:#fff ;
+  --bs-btn-bg: var(--primary);
+  --bs-btn-hover-color:#fff ;
+  --bs-btn-hover-bg: var(--hard-primary);
+  --bs-btn-focus-shadow-rgb: 49, 132, 253;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: var(--hard-primary);
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  padding: 14px 32px;
+}
+@media screen and (max-width:1200px){
+  .banner-info .banner-span{
+    width: 100%;
+}
+}
+@media screen and (min-width:768px) and (max-width:991px){
+  .banner .banner-info .sale-head{
+    font-size: 0.6rem;
+  }
+  .banner .banner-info .sale-head p{
+    padding-bottom: 0 !important;
+  }
+  .banner .banner-info .sale-head.gap-2{
+    gap: 1rem !important;
+  }
+  .banner .banner-info .sale-head h2.fs-1{
+    font-size: 2rem !important;
+  }
+  .banner .banner-info .sale-head h2.gap-3{
+    gap: 0.3rem !important;
+  }
+  .banner .btn-primary {
+  --bs-btn-color:#fff ;
+  --bs-btn-bg: var(--primary);
+  --bs-btn-hover-color:#fff ;
+  --bs-btn-hover-bg: var(--hard-primary);
+  --bs-btn-focus-shadow-rgb: 49, 132, 253;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: var(--hard-primary);
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  padding: 6px 20px;
+}
+  .banner .banner-info.gap-3{
+    gap: 0.5rem !important;
+}
+.banner-info .banner-span{
+  width: 100%;
+  font-size: 0.7rem;
+}
+}
+@media screen and (min-width:576px) and (max-width:767px){
+  .banner .banner-info .sale-head{
+    font-size: 0.5rem;
+  }
+  .banner .banner-info .sale-head p{
+    padding-bottom: 0 !important;
+  }
+  .banner .banner-info .sale-head.gap-2{
+    gap: 0.1rem !important;
+  }
+  .banner .banner-info .sale-head h2.fs-1{
+    font-size: 1rem !important;
+  }
+  .banner .banner-info .sale-head h2.gap-3{
+    gap: 0.3rem !important;
+  }
+  .banner .btn-primary {
+  --bs-btn-color:#fff ;
+  --bs-btn-bg: var(--primary);
+  --bs-btn-hover-color:#fff ;
+  --bs-btn-hover-bg: var(--hard-primary);
+  --bs-btn-focus-shadow-rgb: 49, 132, 253;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: var(--hard-primary);
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  padding: 6px 20px;
+}
+  .banner .banner-info.gap-3{
+    gap: 0.2rem !important;
+}
+.banner-info .banner-span{
+  width: 100%;
+  font-size: 0.7rem;
+}
+}
 .footer .footer-t{
   background-color: #F7F7F7;
   padding: 40px 0;
