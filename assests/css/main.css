@@ -782,7 +782,28 @@ h2{
   .co-2,.co-3,.co-4,.co-5,.co-6{
     box-shadow: -1px 0 var(--gray-1);
   }
-
+}
+.insta-post {
+  transition: all 0.3s ease-in-out;
+  width: fit-content;
+}
+.insta-post i{
+  color: var(--gray-0);
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+}
+.insta-post:hover{
+  i{
+    opacity: 1;
+  }
+  .overlay{
+    opacity: 1;
+  }
+}
+.overlay{
+  background-color: rgba(43, 87, 46, 0.8);
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
 }
 
 .footer .footer-t{
@@ -793,81 +814,80 @@ h2{
   .footer .footer-t{
     padding: 20px 0;
 }
-      }
-      .footer .news-left span{
-        color: var(--gray-4);
-      }
-      .footer .input-group .btn{
-        transition: all 0.2s ease-in-out;
-      }
-      .footer .input-group .btn:hover{
-        background-color: var(--hard-primary);
-      }
-      .footer .social{
-        color: var(--gray-7);
-        transition: all 0.3s ease-in-out;
-      } 
-      .footer .social i{
-        width: 20px;
-        height: 20px;
-      } 
-      .footer .social:hover{
-        color: #fff;
-        background-color: var(--primary);
-      }
-      .footer .footer-b{
-        background-color: var(--gray-9);
-      }
-      .footer-b .leftside-bf span{
-        color:var(--gray-5);
-      }
-      .footer-b .leftside-bf a{
-        color:var(--gray-5);
-        transition: all 0.3s ease-in-out;
-        padding: 3px 0;
-        
-      }
-      .footer-b .leftside-bf a:hover{
-        color:#fff;
-        box-shadow: 0 2px var(--primary);
-      }
-      .footer-b .rightside-bf a.nav-link{
-        padding: 0;
-        color: var(--gray-5);
-        transition: all 0.3s ease-in-out;
-      }
-      .footer-b .rightside-bf a.nav-link:hover{
-        color:#fff;
-      }
-      .footer .footer-b .span-info{
-        box-shadow: 0 -1.5px var(--gray-8);
-      }
-      .footer .rights span{
-        color: var(--gray-5);
-      } 
-      @media screen  and (max-width: 575px) {
-        .navbar{
-          padding: 5px 0;
-        }
-      }
-      @media screen  and (max-width: 420px) {
-        .footer .footer-t .input-group input{
-          display: none;
-        }
-        .footer .footer-t .input-group{ 
-          justify-content: center;
-        }
-        .footer .footer-t .input-group button{
-          position:static !important; 
-          text-align: center;
-        }
-      }
-      @media screen and (max-width:300px) {
-        .footer .footer-t .social-media{
-          gap: 0.25rem !important;
-        }
-        .footer .footer-t .social-media i{
-          width: 100%;
-          height: auto;
-        }
-      }
+}
+.footer .news-left span{
+  color: var(--gray-4);
+}
+.footer .input-group .btn{
+  transition: all 0.2s ease-in-out;
+  }
+.footer .input-group .btn:hover{
+  background-color: var(--hard-primary);
+}
+.footer .social{
+  color: var(--gray-7);
+  transition: all 0.3s ease-in-out;
+} 
+.footer .social i{
+  width: 20px;
+  height: 20px;
+} 
+.footer .social:hover{
+  color: #fff;
+  background-color: var(--primary);
+}
+.footer .footer-b{
+  background-color: var(--gray-9);
+}
+.footer-b .leftside-bf span{
+  color:var(--gray-5);
+}
+.footer-b .leftside-bf a{
+  color:var(--gray-5);
+  transition: all 0.3s ease-in-out;
+  padding: 3px 0;
+}
+.footer-b .leftside-bf a:hover{
+  color:#fff;
+  box-shadow: 0 2px var(--primary);
+}
+.footer-b .rightside-bf a.nav-link{
+  padding: 0;
+  color: var(--gray-5);
+  transition: all 0.3s ease-in-out;
+}
+.footer-b .rightside-bf a.nav-link:hover{
+color:#fff;
+}
+.footer .footer-b .span-info{
+box-shadow: 0 -1.5px var(--gray-8);
+}
+.footer .rights span{
+color: var(--gray-5);
+} 
+@media screen  and (max-width: 575px) {
+  .navbar{
+    padding: 5px 0;
+  }
+}
+@media screen  and (max-width: 420px) {
+  .footer .footer-t .input-group input{
+    display: none;
+  }
+  .footer .footer-t .input-group{ 
+    justify-content: center;
+  }
+  .footer .footer-t .input-group button{
+    position:static !important; 
+    text-align: center;
+  }
+}
+@media screen and (max-width:300px) {
+  .footer .footer-t .social-media{
+    gap: 0.25rem !important;
+  }
+  .footer .footer-t .social-media i{
+    width: 100%;
+    height: auto;
+  }
+}
