@@ -422,6 +422,11 @@ h2{
   top: 3%;
   left: 4%;
 }
+.products .card .sale-best{
+  background-color:#2388FF;
+  top: 3%;
+  left: 33%;
+}
 .products .card .card-sh-btns{
   top: 3%;
   right: 5%;
@@ -561,6 +566,18 @@ h2{
   .offer .shp-btn.pt-3{
     padding-top: 2.2rem !important;
 }
+}
+
+.feedbacks span{
+  font-size: 0.75rem;
+  color: var(--gray-5);
+}
+.hurry-up{
+  font-size: 0.75rem;
+  color: var(--gray-4);
+}
+.hot-deals .time{
+  color: var(--gray-4);
 }
 .banner-info {
   width: 40%;
