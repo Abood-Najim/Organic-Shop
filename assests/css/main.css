@@ -417,15 +417,16 @@ h2{
 .products .card img{
   filter: drop-shadow(1px 15px 10px var(--gray-2));
 }
-.products .card .sale-span{
-  background-color: var(--danger);
+.products .card .span-sale{
   top: 3%;
   left: 4%;
 }
+.products .card .sale-span{
+  background-color: var(--danger);
+}
+
 .products .card .sale-best{
   background-color:#2388FF;
-  top: 3%;
-  left: 33%;
 }
 .products .card .card-sh-btns{
   top: 3%;
@@ -576,9 +577,13 @@ h2{
   font-size: 0.75rem;
   color: var(--gray-4);
 }
+.hot-deals{
+  background-color: var(--gray-0);
+}
 .hot-deals .time{
   color: var(--gray-4);
 }
+
 .banner-info {
   width: 40%;
   top:10%;
