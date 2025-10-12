@@ -52,6 +52,7 @@ a{
 }
 hr{
   margin: 0;
+  color: var(--gray-3);
 }
 h2{
   font-weight: 600;
@@ -914,4 +915,28 @@ color: var(--gray-5);
     width: 100%;
     height: auto;
   }
+}
+
+.path{
+    background: url(../img/public/Breadcrumbs.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.path a{
+  color: var(--gray-6);
+  transition: all 0.3s ease-in-out;
+}
+.path a:hover{
+  color: var(--gray-2);
+}
+.breadcrumb-item+.breadcrumb-item::before {
+    color: var(--gray-6);
+}
+.path .active{
+  color: var(--primary);
+}
+
+.input:focus{
+  outline: none;
+  border: 2px solid var(--primary);
 }
