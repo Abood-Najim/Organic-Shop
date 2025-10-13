@@ -215,21 +215,26 @@
   </header>
   <main>
     <section class="sign-in">
-      <div class="path py-5 ">
+      <div class="path py-5">
         <div class="container container-lg">
           <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
             <ol class="breadcrumb">
               <li class="breadcrumb-item"><a href="../index.html"><i class="fa-regular fa-house"></i></a></li>
               <li class="breadcrumb-item"><a href="#">Account</i></a></li>
-              <li class="breadcrumb-item active" aria-current="page">Library</li>
+              <li class="breadcrumb-item active" aria-current="page">Login</li>
             </ol>
           </nav>
         </div>
       </div>
-        <div class="sign-in-form px-3 pb-5 d-flex flex-column align-items-center justify-content-between m-auto my-4">
+        <div class="sign-in-form px-3 pb-5 d-flex flex-column align-items-center justify-content-between mx-auto my-5">
           <h1 class="text-capitalize py-3">sign in</h1>
-          <input type="email" placeholder="Email" class="e-mail p-2 w-100 input " />
-          <input type="password" placeholder="password" class="password p-2 w-100 input" />
+          <form class="d-flex flex-column w-100 align-items-center gap-3 position-relative">
+            <input type="email" placeholder="Email" class="e-mail p-2 w-100 input " />
+            <input type="password" placeholder="password" class="password p-2 w-100 input" />
+            <button class="border-0 position-absolute p-0 m-0 hide-3">
+              <i class="fa-solid fa-eye "></i>
+            </button>
+          </form>
           <div class="remember-forget d-flex align-items-center justify-content-between w-100 flex-column flex-sm-row row-gap-2">
             <div class="remember">
               <input type="checkbox" id="remember" name="remember" value="Remembering"/>
@@ -245,7 +250,7 @@
         </div>
     </section>
   </main>
-  <footer class="footer pt-4">
+  <footer class="footer ">
     <div class="footer-t">
       <div class="container-fluid container-lg">
         <div class="row align-items-center justify-content-between">
