@@ -1,0 +1,103 @@
+.fa-sliders{
+    color: transparent;
+    -webkit-text-stroke: 1px #fff;
+}
+.shop .botton{
+    transition: all 0.3s ease-in-out;
+}
+.shop .botton:hover{
+    color: #fff;
+    background-color: var(--hard-primary);
+}
+.filter{
+    width:10rem;
+}
+.category-counter{
+    color: var(--gray-3);
+}
+.show-all{
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    transition: all 0.3s ease-in-out;
+}
+.show-all:hover{
+    background-color: var(--gray-0);
+}
+.fa-chevron-up{
+    width: 14px;
+    height: 16px;
+}
+.range1{
+    color: var(--primary);
+}
+.range2{
+    color: var(--primary);
+}
+.price-in-num input{
+    border: none;
+}
+.price-in-num input:focus{
+    outline: 2px solid var(--primary);
+}
+.num-price{
+    color: var(--gray-3);
+}
+.popular-tag .nav-item a{
+    color: var(--gray-9);
+    background-color: var(--gray-0);
+    font-size: 0.8rem;
+    transition: all 0.3s ease-in-out;
+}
+.popular-tag .nav-item a:hover{
+    background-color: var(--gray-1);
+}
+.popular-tag .nav-link.active{
+    color:#fff;
+    background-color: var(--primary);
+}
+.shop-discount .span{
+    color: var(--gray-9);
+    font-size: 0.8rem;
+}
+.shop-discount .discount-head .warn-span{
+    font-size: 1.5rem;
+    color: var(--warning);
+    font-weight: 500;
+}
+.shop-discount .discount-head span,h2{
+    color: var(--gray-9);
+}
+.shop-discount .position-absolute{
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%, 5%);
+}
+.shop-discount .h-link{
+    padding-top: 0;
+}
+.sale-products h2{
+  color: var(--gray-9);
+}
+
+.sale-products .h-link{
+  font-weight: 300;
+}
+.sale-products .card-body h3{
+  font-size: 0.8rem;
+  transition: all 0.3s ease-in-out;
+}
+.sale-products .card-body h3 a{
+  color: var(--gray-9);
+  transition: all 0.3s ease-in-out;
+}
+.sale-products .card{
+  transition: all 0.3s ease-in-out;
+}
+.sale-products .card:hover{
+  box-shadow: 0 0 12px rgba(32, 181, 38, 0.32);
+  --bs-card-border-color:var(--hard-primary);
+}
+.card-body h3:hover a{
+  color: var(--hard-primary);
+}
