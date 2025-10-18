@@ -424,6 +424,11 @@ h2{
 }
 .products .card .sale-span{
   background-color: var(--danger);
+  top: 3%;
+  left: 4%;
+}
+.products .card .sale-span2{
+  background-color: var(--danger);
 }
 
 .products .card .sale-best{
@@ -939,4 +944,8 @@ color: var(--gray-5);
 .input:focus{
   outline: none;
   border: 2px solid var(--primary);
+}
+
+.span-gray{
+  color: var(--gray-4);
 }

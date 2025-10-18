@@ -101,3 +101,46 @@
 .card-body h3:hover a{
   color: var(--hard-primary);
 }
+.products .card .out-of-stock{
+  top: 3%;
+  left: 4%;
+  background-color: var(--gray-9);
+}
+.page-nums .page{
+    color: var(--gray-9);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1rem;
+    height: 1rem ;
+    padding: 1rem;
+}
+.page-nums .page:hover{
+    background-color: var(--gray-0);
+}
+.page-nums .page:active{
+    background-color: var(--gray-2);
+}
+.page-nums .page:focus{
+    background-color: var(--primary);
+    color:#fff;
+}
+.page-nums .page.active{
+    background-color: var(--primary);
+    color:#fff;
+}
+.font-size{
+    font-size: 1rem;
+}
+@media screen and (max-width: 420px) {
+    .sh-r-top{
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .products .font-size{
+        font-size: 0.70rem ;
+    }
+    .products .shopping-btns i{
+        font-size: 0.75rem;
+    }
+}
