@@ -17,6 +17,9 @@
 .header-t a:hover{
     color: var(--gray-0);
 }
+.header .nav-link.active{
+    color:var(--primary);
+}
 .sign-in-form{
     gap: 10px;
     width: 30%;
@@ -31,18 +34,18 @@
     transition: all 0.3s ease-in-out;
 }
 .sign-in-form .remember-forget .remember{
-   color: var(--gray-5);
-   font-size: 1.1rem;
+    color: var(--gray-5);
+    font-size: 1.1rem;
 }
 .sign-in-form .remember-forget .acceptance{
-   color: var(--gray-5);
-   font-size: 1rem;
+    color: var(--gray-5);
+    font-size: 1rem;
 }
 .sign-in-form .remember-forget .acceptance {
-   color: var(--gray-5);
-   font-size: 1rem;
+    color: var(--gray-5);
+    font-size: 1rem;
     input[type="checkbox"]{
-       transform: scale(1.3); 
+        transform: scale(1.3); 
     }
 }
 input[type="checkbox"]{

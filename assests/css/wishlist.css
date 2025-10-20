@@ -1,0 +1,54 @@
+.social{
+  color: var(--gray-7);
+  transition: all 0.3s ease-in-out;
+} 
+.social i{
+  width: 20px;
+  height: 20px;
+} 
+.social:hover{
+  color: #fff;
+  background-color: var(--primary);
+}
+.stock{
+  color: var(--hard-primary);
+  background-color: rgba(32, 181, 38, 0.2);
+}
+
+.shopping-btns{
+  color: #fff;
+  transition: all 0.3s ease-in-out;
+  background-color: var(--primary);
+} 
+.shopping-btns:hover{
+  color: #fff;
+  background-color: var(--hard-primary);
+}
+.quantity-btn{
+  width:1rem;
+  height:1rem;
+  padding: 0.75rem;
+  border: none;
+  font-size: 0.75rem;
+  transition: all 0.3s ease-in-out;
+  border: 1px solid var(--gray-2);
+  color:var(--gray-6);
+  background-color: transparent;
+}
+.quantity-btn:hover{
+  background-color: var(--gray-1);
+}
+.quantity .quantity-num:focus{
+  outline-color: var(--primary);
+}
+.h-link{
+  font-weight: 300;
+}
+.card-body h3{
+  font-size: 0.8rem;
+  transition: all 0.3s ease-in-out;
+}
+.card-body h3 a{
+  color: var(--gray-9);
+  transition: all 0.3s ease-in-out;
+}

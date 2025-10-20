@@ -21,8 +21,11 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
   <!-- custom  css -->
-  <link href="../assests/css/main.css" rel="stylesheet">
+  <link rel="stylesheet" href="../assests/css/main.css">
+  <link rel="stylesheet" href="../assests/css/sign-in.css">
+  <!-- page css -->
   <link rel="stylesheet" href="../assests/css/p-details.css">
+
 </head>
 
 <body>
@@ -230,7 +233,8 @@
       <div class="container-fluid container-lg">
         <div class="d-flex flex-column gap-2 align-items-center">
           <div class="product d-flex gap-2 flex-column flex-md-row">
-            <div class="p-leftside row flex-column flex-md-row">
+            <div class="col-md-4">
+              <div class="p-leftside row flex-column flex-md-row">
               <div class="col-md-3 col-12 order-md-0 order-1">
                 <div class="gallery d-flex flex-md-column align-content-center justify-content-center justify-content-md-start gap-md-3 gap-0">
                   <button class="btn d-flex align-items-center justify-content-center">
@@ -244,11 +248,11 @@
                     <img src="../assests/img/product-details/Product-Image-1.webp" alt="chinese cobbage"
                       class="img-fluid">
                   </button>
-                  <button class="gal-img d-none d-md-flex align-items-center justify-content-center">
+                  <button class="gal-img d-none d-sm-flex align-items-center justify-content-center">
                     <img src="../assests/img/product-details/Product-Image-2.webp" alt="chinese cobbage"
                       class="img-fluid">
                   </button>
-                  <button class="gal-img d-none d-md-flex align-items-center justify-content-center">
+                  <button class="gal-img d-none d-sm-flex align-items-center justify-content-center">
                     <img src="../assests/img/product-details/Product-Image-3.webp" alt="chinese cobbage"
                       class="img-fluid">
                   </button>
@@ -265,8 +269,10 @@
                 </div>
               </div>
             </div>
-
-            <div class="p-rightside d-flex flex-column gap-3">
+            </div>
+            
+            <div class="col-md-8">
+              <div class="p-rightside d-flex flex-column gap-3">
               <div class="p-head b-border d-flex flex-column gap-1 pb-3 flex-wrap row-gap-2">
                 <div class="name-stock d-flex flex-wrap row-gap-2 align-items-center gap-2">
                   <h1 class="name mb-0">Chinese Cabbage</h1>
@@ -332,7 +338,7 @@
                   a consequat pulvinar. </p>
               </div>
               <div class="add-to-cart w-100 b-border pb-3">
-                <div class=" row justify-content-between align-items-center flex-column gap-3 flex-sm-row">
+                <div class=" row justify-content-between align-items-center flex-column gap-3 gap-sm-0 flex-sm-row">
                   <div class="col-sm-4 col-12">
                     <form class="quantity w-100 d-flex gap-1 border rounded-5 p-1">
                       <button class="quantity-btn rounded-circle d-flex align-items-center justify-content-center">
@@ -386,6 +392,8 @@
                 </div>
               </div>
             </div>
+            </div>
+            
           </div>
           <div class="p-details w-100 py-4">
             <ul class="nav nav-tabs d-flex align-items-center justify-content-center" id="myTab" role="tablist">
