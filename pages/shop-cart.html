@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="en">
-  <head>
+
+<head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Organic Shop</title>
@@ -20,10 +21,535 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
   <!-- custom  css -->
-  <link href="./assests/css/main.css" rel="stylesheet">
+  <link rel="stylesheet" href="../assests/css/main.css">
+  <!-- this page is for the light nav to be  honest -->
+  <link rel="stylesheet" href="../assests/css/sign-in.css">
+  <!-- <link rel="stylesheet" href="../assests/css/wishlist.css"> -->
+  <!-- page css -->
+  <link rel="stylesheet" href="../assests/css/shop-cart.css">
 </head>
-  <body>
-    <h1>Hello, world!</h1>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-  </body>
+
+<body>
+  <div class="header-t d-none d-md-block bg-dark p-sm-2">
+    <div class="container-fluid container-lg">
+      <div class="row align-items-center">
+        <div class="col-7">
+          <div class="leftside d-flex align-items-center gap-1">
+            <i class="fa-solid fa-location-dot"></i>
+            <address class="m-0">Store Location: Lincoln- 344, Illinois, Chicago, USA</address>
+          </div>
+        </div>
+        <div class="col-5">
+          <div class="rightside d-flex justify-content-end align-items-center">
+            <div class="lang-cur d-flex align-items-center gap-2  pe-1">
+              <div class="dropdown">
+                <button class="btn dropdown-toggle border-0 " type="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Eng
+                </button>
+                <ul class="dropdown-menu">
+                  <li><button class="dropdown-item disabled" type="button">English</button></li>
+                  <li><button class="dropdown-item" type="button">Arabic</button></li>
+                  <li><button class="dropdown-item" type="button">Spanish</button></li>
+                </ul>
+              </div>
+              <div class="dropdown">
+                <button class="btn dropdown-toggle border-0" type="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  USD
+                </button>
+                <ul class="dropdown-menu">
+                  <li><button class="dropdown-item disabled" type="button">USD</button></li>
+                  <li><button class="dropdown-item" type="button">ILS</button></li>
+                  <li><button class="dropdown-item" type="button">EUR</button></li>
+                  <li><button class="dropdown-item" type="button">JOD</button></li>
+                </ul>
+              </div>
+            </div>
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb m-0 justify-content-end">
+                <li class="breadcrumb-item">
+                  <a href="#">Sign In</a>
+                </li>
+                <li class="breadcrumb-item">
+                  <a href="./sign-up.html">Sign Up</a>
+                </li>
+              </ol>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <hr />
+  <header class="header sticky-top">
+    <nav class="navbar navbar-expand-md bg-white mid-nav p-sm-3">
+      <div class="container-fluid container-lg">
+        <div class="col-lg-3 col-md-4 col-8 ">
+          <a class="navbar-brand logo d-flex" href="../index.html">
+            <img src="../assests/img/public/small-logo.svg" alt="logo" class="s-logo">
+            <img src="../assests/img/public/Logo.svg" alt="Logo" class="l-logo" />
+          </a>
+        </div>
+        <div class="col-lg-6 col-sm-4 d-none d-md-flex">
+          <div class="input-group align-items-center">
+            <input type="search" class="form-control shadow-none p-2 " placeholder="Search" aria-label="search"
+              aria-describedby="button-addon2">
+            <button class="btn botton p-2" type="button" id="button-addon2"><i
+                class="fa-solid fa-magnifying-glass d-block d-lg-none"></i><span
+                class="d-none d-lg-block">Search</span></button>
+          </div>
+        </div>
+        <div class="col-4 d-md-none d-flex align-items-center gap-1 justify-content-end">
+          <button class="btn position-relative border-0" type="button" data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+            <img src="../assests/img/public/shoppping-cart.svg" alt="shopping-cart" />
+            <span class="position-absolute badge rounded-pill">
+              2
+            </span>
+          </button>
+          <div class="search-icon d-md-none d-flex align-items-center justify-content-end">
+            <button class="d-flex border-0 btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+          </div>
+        </div>
+        <div class="col-lg-3 col-sm-4">
+          <div class="cart-wish d-md-flex align-items-center justify-content-end d-none">
+            <div class="wishlist px-1">
+              <a class="btn border-0" href="./wishlist.html">
+                <img src="../assests/img/public/heart.svg" alt="Whishlist" />
+              </a>
+            </div>
+            <div class="cart d-flex">
+              <button class="btn position-relative border-0" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                <img src="../assests/img/public/shoppping-cart.svg" alt="shopping-cart" />
+                <span class="position-absolute badge rounded-pill">
+                  2
+                </span>
+              </button>
+              <div class="total-shopping d-flex flex-column ">
+                <span class="name">Shopping cart:</span>
+                <span class="price">$57.00</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <hr />
+    <nav class="navbar navbar-expand-md btm-nav  bg-white p-sm-2 ">
+      <div class="container-fluid container-lg">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav gap-md-3 gap-1">
+            <li class="nav-item dropdown ">
+              <a class="nav-link active dropdown-toggle" aria-current="page" href="#" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                Home
+              </a>
+              <ul class="dropdown-menu  m-0">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="./shop.html" role="button">
+                Shop
+              </a>
+              <ul class="dropdown-menu  m-0">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+            <li class="nav-item d-block d-md-none">
+              <a class="nav-link" href="./sign-in.html">Account</a>
+            </li>
+            <li class="nav-item d-block d-md-none">
+              <a class="nav-link" href="./wishlist.html">Wishlist</a>
+            </li>
+            <li class="nav-item d-block d-md-none">
+              <div class="dropdown">
+                <button class="nav-link dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Language
+                </button>
+                <ul class="dropdown-menu dropdown-menu-dark">
+                  <li><button class="dropdown-item disabled" type="button">English</button></li>
+                  <li><button class="dropdown-item" type="button">Arabic</button></li>
+                  <li><button class="dropdown-item" type="button">Spanish</button></li>
+                </ul>
+              </div>
+            </li>
+            <li class="nav-item d-block d-md-none">
+              <div class="dropdown">
+                <button class="nav-link dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Curruncy
+                </button>
+                <ul class="dropdown-menu dropdown-menu-dark">
+                  <li><button class="dropdown-item disabled" type="button">English</button></li>
+                  <li><button class="dropdown-item" type="button">Arabic</button></li>
+                  <li><button class="dropdown-item" type="button">Spanish</button></li>
+                </ul>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./blog.html">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./FAQ.html">FAQ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./about.html">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./contact.html">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+        <div class="phonenum d-md-flex align-items-center gap-1 text-white d-none ">
+          <i class="fa-solid fa-phone-volume"></i>
+          <span>(219) 555-0114</span>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main>
+
+    <section class="path py-md-5 py-4">
+      <div class="container-fluid container-lg">
+        <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+          <ol class="breadcrumb m-0">
+            <li class="breadcrumb-item"><a href="../index.html"><i class="fa-regular fa-house"></i></a></li>
+            <li class="breadcrumb-item active text-capitalize" aria-current="page">shopping cart</li>
+          </ol>
+        </nav>
+      </div>
+    </section>
+    <section class="shopping-cart py-5">
+      <div class="container-fluid container-lg">
+        <h1 class="text-capitalize text-center mb-3">my shopping cart</h1>
+
+        <div class="cart-head border p-2 rounded-top-2 d-sm-block d-none">
+          <div class="row">
+            <div class="col-4">
+              <span class="span-gray text-uppercase">product</span>
+            </div>
+            <div class="col-2">
+              <span class="span-gray text-uppercase">price</span>
+            </div>
+            <div class="col-3">
+              <span class="span-gray text-uppercase">quantity</span>
+            </div>
+            <div class="col-3">
+              <span class="span-gray text-uppercase">subtotal</span>
+            </div>
+          </div>
+        </div>
+        <div class="cart-content p-2 border-start border-end">
+          <div class="border-bottom">
+            <div class="row align-items-center py-2">
+              <div class="col-sm-4 px-2 col-6 colo-12">
+                <div class="product">
+                  <div class="card bg-transparent position-relative border-0 text-center flex-row">
+                    <img src="../assests/img/products/green-capsicum.webp" class=" w-25 img-fluid object-fit-contain"
+                      alt="green capsicum">
+                    <button
+                      class="quantity-btn position-absolute end-0 rounded-circle d-sm-none d-flex align-items-center justify-content-center">
+                      <i class="fa-solid fa-xmark d-flex align-items-center justify-content-center"></i>
+                    </button>
+                    <div class="card-body d-flex flex-column align-items-start justify-content-center">
+                      <div class="top-body">
+                        <h2 class="card-text text-capitalize fw-normal m-0">
+                          <a href="./p-details.html">green capsicum</a>
+                        </h2>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-2 col-6 colo-12">
+                <div class="price-span">
+                  <span class="fw-medium">$14.00</span>
+                </div>
+              </div>
+              <div class="col-sm-3 col-12 d-flex flex-wrap row-gap-2 align-items-center justify-content-between">
+                <form class="quantity w-100 d-flex gap-1 border rounded-5 p-1">
+                  <button class="quantity-btn rounded-circle d-flex align-items-center justify-content-center">
+                    <i class="fa-solid fa-minus d-flex align-items-center justify-content-center"></i>
+                  </button>
+                  <input type="text" value="5" class="quantity-num w-100 border-0 text-center" name="quantity" min="0">
+                  <button class="quantity-btn rounded-circle d-flex align-items-center justify-content-center">
+                    <i class="fa-solid fa-plus d-flex align-items-center justify-content-center"></i>
+                  </button>
+                </form>
+              </div>
+              <div class="col-sm-3 col-12">
+                <div class="d-flex align-items-center justify-content-between gap-2">
+                  <div class="price-span">
+                    <span class="subtotal d-block d-sm-none text-uppercase">subtotal</span>
+                    <span class="fw-medium">$14.00</span>
+                  </div>
+                  <button
+                    class="quantity-btn rounded-circle d-none d-sm-flex align-items-center justify-content-center">
+                    <i class="fa-solid fa-xmark d-flex align-items-center justify-content-center"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row align-items-center py-2">
+            <div class="col-sm-4 px-2 col-6 colo-12">
+              <div class="product">
+                <div class="card bg-transparent position-relative border-0 text-center flex-row">
+                  <img src="../assests/img/products/red-capsicum.webp" class=" w-25 img-fluid object-fit-contain"
+                    alt="red capsicum">
+                  <button
+                    class="quantity-btn position-absolute end-0 rounded-circle d-sm-none d-flex align-items-center justify-content-center">
+                    <i class="fa-solid fa-xmark d-flex align-items-center justify-content-center"></i>
+                  </button>
+                  <div class="card-body d-flex flex-column align-items-start justify-content-center">
+                    <div class="top-body">
+                      <h2 class="card-text text-capitalize fw-normal m-0">
+                        <a href="./p-details.html">red capsicum</a>
+                      </h2>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-2 col-6 colo-12">
+              <div class="price-span">
+                <span class="fw-medium">$14.00</span>
+              </div>
+            </div>
+            <div class="col-sm-3 col-12 d-flex flex-wrap row-gap-2 align-items-center justify-content-between">
+              <form class="quantity w-100 d-flex gap-1 border rounded-5 p-1">
+                <button class="quantity-btn rounded-circle d-flex align-items-center justify-content-center">
+                  <i class="fa-solid fa-minus d-flex align-items-center justify-content-center"></i>
+                </button>
+                <input type="text" value="5" class="quantity-num w-100 border-0 text-center" name="quantity" min="0">
+                <button class="quantity-btn rounded-circle d-flex align-items-center justify-content-center">
+                  <i class="fa-solid fa-plus d-flex align-items-center justify-content-center"></i>
+                </button>
+              </form>
+            </div>
+            <div class="col-sm-3 col-12">
+              <div class="d-flex align-items-center justify-content-between gap-2">
+                <div class="price-span">
+                  <span class="subtotal d-block d-sm-none text-uppercase">subtotal</span>
+                  <span class="fw-medium">$14.00</span>
+                </div>
+                <button class="quantity-btn rounded-circle d-none d-sm-flex align-items-center justify-content-center">
+                  <i class="fa-solid fa-xmark d-flex align-items-center justify-content-center"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="update-cart d-flex flex-wrap row-gap-3 align-items-center justify-content-between border rounded-bottom-2 p-2">
+          <button
+            class="update-btn d-flex align-items-center justify-content-center py-md-3 px-md-4 p-2 border-0 gap-1">
+            <span class="text-capitalize">Return to shop</span>
+          </button>
+          <button
+            class="update-btn d-flex align-items-center justify-content-center py-md-3 px-md-4 p-2 border-0 gap-1">
+            <span class="text-capitalize">Update Cart</span>
+          </button>
+        </div>
+        <div class="coupon-code p-2 border rounded-2 mt-3">
+          <div class="row align-items-center ">
+          <div class="col-2 d-sm-block d-none">
+            <h3 class="text-capitalize fs-6 mb-0">coupon code</h3>
+          </div>
+          <div class="col-sm-10 ">
+            <div class="d-flex flex-wrap apply-code align-items-center position-relative">
+            <input type="text" class="form-control shadow-none py-md-3 px-md-4 rounded-5 z-0" placeholder="Enter code"
+              aria-label="Enter code" aria-describedby="button-addon2">
+            <button class="btn coupon-btn py-md-3 px-md-4  rounded-5 text-capitalize  z-0"
+              type="button" id="button-addon2">apply coupon</button>
+          </div>
+          </div>
+        </div>
+        </div>
+        
+      </div>
+    </section>
+  </main>
+  <footer class="footer ">
+    <div class="footer-t">
+      <div class="container-fluid container-lg">
+        <div class="row align-items-center justify-content-between">
+          <div class="col-lg-5">
+            <div class="news-left d-none d-lg-block">
+              <h2 class="fw-semibold">Subcribe our Newsletter</h2>
+              <span>
+                Pellentesque eu nibh eget mauris congue mattis mattis nec tellus. Phasellus imperdiet elit eu magna.
+              </span>
+            </div>
+          </div>
+          <div class="col-lg-7">
+            <div class="news-right d-flex align-items-center gap-4 flex-column flex-md-row">
+              <div class="input-group align-items-center position-relative">
+                <input type="email" class="form-control shadow-none p-3 rounded-5 z-0" placeholder="Your email address"
+                  aria-label="Your email address" aria-describedby="button-addon2">
+                <button class="btn botton p-3 rounded-5 position-absolute end-0 z-0 d-block d-lg-none" type="button"
+                  id="button-addon2">Subscribe To Our News</button>
+                <button class="btn botton p-3 rounded-5 position-absolute end-0 z-0 d-lg-block d-none" type="button"
+                  id="button-addon2">Subscribe</button>
+              </div>
+              <div class="social-media d-flex align-items-center gap-md-5 gap-3 gap-lg-3 ">
+                <a href="#" class="social rounded-circle d-flex align-items-center justify-content-center p-2">
+                  <i class="fa-brands fa-facebook-f d-flex align-items-center justify-content-center"></i>
+                </a>
+                <a href="#" class="social rounded-circle d-flex align-items-center justify-content-center p-2">
+                  <i class="fa-brands fa-twitter d-flex align-items-center justify-content-center"></i>
+                </a>
+                <a href="#" class="social rounded-circle d-flex align-items-center justify-content-center p-2">
+                  <i class="fa-brands fa-pinterest-p d-flex align-items-center justify-content-center"></i>
+                </a>
+                <a href="#" class="social rounded-circle d-flex align-items-center justify-content-center p-2">
+                  <i class="fa-brands fa-instagram d-flex align-items-center justify-content-center"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-b ">
+      <div class="container-fluid container-lg">
+        <div class="row align-items-center justify-content-between py-5 flex-column flex-lg-row gap-lg-0 gap-2">
+          <div class="col-lg-4">
+            <div
+              class="leftside-bf d-flex flex-column align-items-lg-start gap-3 align-items-center text-center text-lg-start">
+              <img src="../assests/img/public/Logo-white.svg" alt="whited-logo" class="white-logo">
+              <span>
+                Morbi cursus porttitor enim lobortis molestie. Duis gravida turpis dui, eget bibendum magna conguenec.
+              </span>
+              <div class="contact-info d-flex gap-1 gap-sm-2 align-items-center flex-column flex-sm-row">
+                <a href="tel:(219) 555-0114">(219) 555-0114</a>
+                <span>or</span>
+                <a href="mailto:Proxy@gmail.com">Proxy@gmail.com</a>
+              </div>
+            </div>
+          </div>
+          <div
+            class="row col-lg-8 rightside-bf align-items-start justify-content-between flex-column flex-sm-row gap-3 gap-sm-0">
+            <div class="col-lg-3 col-sm-6 col-12 mb-sm-3 ">
+              <nav
+                class="nav1 d-flex flex-column p-0 gap-4 align-items-center align-items-lg-start text-center text-lg-start">
+                <p class="text-white m-0">My Account</p>
+                <ul class="nav flex-column gap-3">
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="#">My Account</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Order History</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Shopping cart</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Wishlist</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <div class="col-lg-3 col-sm-6 col-12 mb-sm-3">
+              <nav
+                class="nav1 d-flex flex-column p-0 gap-4 align-items-center align-items-lg-start text-center text-lg-start">
+                <p class="text-white m-0">Help</p>
+                <ul class="nav flex-column gap-3">
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="./contact.html">Contact</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./FAQ.html">FAQs</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Term & Conditions</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Privacy Policy</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <div class="col-lg-3 col-sm-6 col-12">
+              <nav
+                class="nav1 d-flex flex-column p-0 gap-4 align-items-center align-items-lg-start text-center text-lg-start">
+                <p class="text-white m-0">Proxy</p>
+                <ul class="nav flex-column gap-3">
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="./about.html">About</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./shop.html">Shop</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./shop.html">Product</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./order-d.html">Track Order</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <div class="col-lg-3 col-sm-6 col-12">
+              <nav
+                class="nav1 d-flex flex-column p-0 gap-4 align-items-center align-items-lg-start text-center text-lg-start">
+                <p class="text-white m-0">Categories</p>
+                <ul class="nav flex-column gap-3">
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="#">Fruit & Vegetables</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Meat & Fish</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Bread & Bakery</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Beauty & Health</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+        <div
+          class="span-info d-flex align-items-center text-center justify-content-between py-3 flex-column flex-md-row gap-2 gap-md-0">
+          <div class="rights">
+            <span>Ecobazar eCommerce © 2021. All Rights Reserved</span>
+          </div>
+          <div class="payment-methods d-flex align-items-center justify-content-center gap-2 flex-wrap">
+            <img src="../assests/img/payment-methods/Method=ApplePay.svg" alt="Apple pay" />
+            <img src="../assests/img/payment-methods/Method=Visa.svg" alt="Visa" />
+            <img src="../assests/img/payment-methods/Method=Discover.svg" alt="Discover" />
+            <img src="../assests/img/payment-methods/Method=Mastercard.svg" alt="Mastercard" />
+            <img src="../assests/img/payment-methods/secure.svg" alt="Payment secure" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasRightLabel">Shopping Cart</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      ...
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>
