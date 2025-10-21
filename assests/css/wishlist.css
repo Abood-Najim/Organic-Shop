@@ -1,24 +1,31 @@
-.social{
-  color: var(--gray-7);
-  transition: all 0.3s ease-in-out;
-} 
-.social i{
-  width: 20px;
-  height: 20px;
-} 
-.social:hover{
-  color: #fff;
-  background-color: var(--primary);
+.wish-content{
+  border-top: 0;
+}
+@media screen and (max-width:575px){
+  .wish-content{
+    border-top: 1px solid var(--gray-1);
+    border-top-left-radius: 0.375rem;
+    border-top-right-radius: 0.375rem;
+  }
 }
 .stock{
   color: var(--hard-primary);
   background-color: rgba(32, 181, 38, 0.2);
+}
+.out-of-stock{
+  color: var(--danger);
+  background-color: rgba(234, 75, 72, 0.2);
 }
 
 .shopping-btns{
   color: #fff;
   transition: all 0.3s ease-in-out;
   background-color: var(--primary);
+  border-radius: 2rem;
+  i{
+    color: transparent;
+    -webkit-text-stroke: 1px #fff;
+  }
 } 
 .shopping-btns:hover{
   color: #fff;
@@ -41,14 +48,57 @@
 .quantity .quantity-num:focus{
   outline-color: var(--primary);
 }
+@media screen and (max-width:767px){
+  .shopping-btns{
+  border-radius: 50%;
+} 
+}
+.card-body{
+  padding:0.1rem ;
+}
 .h-link{
   font-weight: 300;
 }
-.card-body h3{
+.card-body h2{
   font-size: 0.8rem;
   transition: all 0.3s ease-in-out;
 }
-.card-body h3 a{
+.card-body h2 a{
   color: var(--gray-9);
   transition: all 0.3s ease-in-out;
+}
+.card-body h2:hover a{
+  color: var(--hard-primary);
+}
+.social{
+  color: var(--gray-7);
+  transition: all 0.3s ease-in-out;
+} 
+.social i{
+  width: 20px;
+  height: 20px;
+} 
+.social:hover{
+  color: #fff;
+  background-color: var(--primary);
+}
+@media screen and (max-width:575px) {
+  .wish-content .row{
+    flex-direction: column;
+    row-gap: 0.5rem;
+  }
+  .wish-content .row .colo-12{
+    flex: 0 0 auto;
+    width:100%;
+  }
+}
+.shopping-btns.disabled{
+  color: var(--gray-3);
+  transition: all 0.3s ease-in-out;
+  background-color: var(--gray-0);
+  border-radius: 2rem;
+  i{
+    color: transparent;
+    -webkit-text-stroke: 1px var(--gray-3);
+  }
 }
