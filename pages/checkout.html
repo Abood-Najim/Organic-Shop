@@ -232,159 +232,143 @@
     </section>
     <section class="shopping-cart py-5">
       <div class="container-fluid container-lg">
-        <h1 class="text-capitalize text-sm-start text-center fs-4 mb-3">billing information</h1>
         <div class="row flex-column flex-md-row gap-3 gap-md-0">
           <div class="col-md-8 col-12">
-            <div class="cart-content p-2 border-start border-end">
-              <div class="border-bottom">
-                <div class="row align-items-center py-2">
-                  <div class="col-sm-4 px-2 col-6 colo-12">
-                    <div class="product">
-                      <div class="card bg-transparent position-relative border-0 text-center flex-row">
-                        <img src="../assests/img/products/green-capsicum.webp"
-                          class=" w-25 img-fluid object-fit-contain" alt="green capsicum">
-                        <button
-                          class="quantity-btn position-absolute end-0 rounded-circle d-sm-none d-flex align-items-center justify-content-center">
-                          <i class="fa-solid fa-xmark d-flex align-items-center justify-content-center"></i>
-                        </button>
-                        <div class="card-body d-flex flex-column align-items-start justify-content-center">
-                          <div class="top-body">
-                            <h2 class="card-text text-capitalize fw-normal m-0">
-                              <a href="./p-details.html">green capsicum</a>
-                            </h2>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
+            <h1 class="text-capitalize text-sm-start text-center fs-4 mb-3">billing information</h1>
+            <form class="customer-info border-bottom pt-3 pb-5">
+              <div class="customer-name py-3">
+                <div class="row align-items-center row-gap-3">
+                  <div class="col-lg-4 col-sm-5 col-12">
+                    <label for="firstname" class="form-label">First name</label>
+                    <input type="text" placeholder="Your first name" class="form-control" id="firstname"
+                      aria-describedby="firstname">
                   </div>
-                  <div class="col-sm-2 col-6 colo-12">
-                    <div class="price-span">
-                      <span class="fw-medium">$14.00</span>
-                    </div>
+                  <div class="col-lg-4 col-sm-5 col-12">
+                    <label for="lastname" class="form-label">Last name</label>
+                    <input type="text" placeholder="Your last name" class="form-control" id="lastname"
+                      aria-describedby="lastname">
                   </div>
-                  <div class="col-sm-3 col-12 d-flex flex-wrap row-gap-2 align-items-center justify-content-between">
-                    <form class="quantity w-100 d-flex gap-1 border rounded-5 p-1">
-                      <button class="quantity-btn rounded-circle d-flex align-items-center justify-content-center">
-                        <i class="fa-solid fa-minus d-flex align-items-center justify-content-center"></i>
-                      </button>
-                      <input type="text" value="5" class="quantity-num w-100 border-0 text-center" name="quantity"
-                        min="0">
-                      <button class="quantity-btn rounded-circle d-flex align-items-center justify-content-center">
-                        <i class="fa-solid fa-plus d-flex align-items-center justify-content-center"></i>
-                      </button>
-                    </form>
-                  </div>
-                  <div class="col-sm-3 col-12">
-                    <div class="d-flex align-items-center justify-content-between gap-2">
-                      <div class="price-span">
-                        <span class="subtotal d-block d-sm-none text-uppercase">subtotal</span>
-                        <span class="fw-medium">$14.00</span>
-                      </div>
-                      <button
-                        class="quantity-btn rounded-circle d-none d-sm-flex align-items-center justify-content-center">
-                        <i class="fa-solid fa-xmark d-flex align-items-center justify-content-center"></i>
-                      </button>
-                    </div>
+                  <div class="col-lg-4 col-sm-5 col-12">
+                    <label for="companyname" class="form-label text-capitalize">company name<span
+                        class="span-gray optional">(optional)</span></label>
+                    <input type="text" placeholder="Company name" class="form-control" id="companyname"
+                      aria-describedby="companyname">
                   </div>
                 </div>
               </div>
-              <div class="row align-items-center py-2">
-                <div class="col-sm-4 px-2 col-6 colo-12">
-                  <div class="product">
-                    <div class="card bg-transparent position-relative border-0 text-center flex-row">
-                      <img src="../assests/img/products/red-capsicum.webp" class=" w-25 img-fluid object-fit-contain"
-                        alt="red capsicum">
-                      <button
-                        class="quantity-btn position-absolute end-0 rounded-circle d-sm-none d-flex align-items-center justify-content-center">
-                        <i class="fa-solid fa-xmark d-flex align-items-center justify-content-center"></i>
-                      </button>
-                      <div class="card-body d-flex flex-column align-items-start justify-content-center">
-                        <div class="top-body">
-                          <h2 class="card-text text-capitalize fw-normal m-0">
-                            <a href="./p-details.html">red capsicum</a>
-                          </h2>
-                        </div>
-                      </div>
-                    </div>
+              <div class="st-address py-3">
+                <label for="street" class="form-label text-capitalize">street address</label>
+                <input type="text" placeholder="Your Street" class="form-control" id="street" aria-describedby="street">
+              </div>
+              <div class="address py-3">
+                <div class="row align-items-center row-gap-3">
+                  <div class="col-lg-4 col-sm-5 col-12">
+                    <label for="countryselect" class="form-label text-capitalize">Country/region</label>
+                    <select class="form-select"  aria-label="countryselect" id="countryselect">
+                      <option selected disabled>Select</option>
+                      <option value="PS">Palestine</option>
+                      <option value="JD">Jordan</option>
+                      <option value="EG">Eygpt</option>
+                      <option value="LB">Lebanon</option>
+                      <option value="SY">Syria</option>
+                    </select>
                   </div>
-                </div>
-                <div class="col-sm-2 col-6 colo-12">
-                  <div class="price-span">
-                    <span class="fw-medium">$14.00</span>
+                  <div class="col-lg-4 col-sm-5 col-12">
+                    <label for="stateselect" class="form-label text-capitalize">state</label>
+                    <select class="form-select"  aria-label="stateselect" id="stateselect">
+                      <option selected disabled>Select</option>
+                      <option value="JN">Jenin</option>
+                      <option value="NB">Nablus</option>
+                      <option value="RA">Ramallah</option>
+                      <option value="He">Hebron</option>
+                      <option value="Js">Jerusalem</option>
+                    </select>
                   </div>
-                </div>
-                <div class="col-sm-3 col-12 d-flex flex-wrap row-gap-2 align-items-center justify-content-between">
-                  <form class="quantity w-100 d-flex gap-1 border rounded-5 p-1">
-                    <button class="quantity-btn rounded-circle d-flex align-items-center justify-content-center">
-                      <i class="fa-solid fa-minus d-flex align-items-center justify-content-center"></i>
-                    </button>
-                    <input type="text" value="5" class="quantity-num w-100 border-0 text-center" name="quantity"
-                      min="0">
-                    <button class="quantity-btn rounded-circle d-flex align-items-center justify-content-center">
-                      <i class="fa-solid fa-plus d-flex align-items-center justify-content-center"></i>
-                    </button>
-                  </form>
-                </div>
-                <div class="col-sm-3 col-12">
-                  <div class="d-flex align-items-center justify-content-between gap-2">
-                    <div class="price-span">
-                      <span class="subtotal d-block d-sm-none text-uppercase">subtotal</span>
-                      <span class="fw-medium">$14.00</span>
-                    </div>
-                    <button
-                      class="quantity-btn rounded-circle d-none d-sm-flex align-items-center justify-content-center">
-                      <i class="fa-solid fa-xmark d-flex align-items-center justify-content-center"></i>
-                    </button>
+                  <div class="col-lg-4 col-sm-5 col-12">
+                    <label for="zipcode" class="form-label text-capitalize">zip code</label>
+                    <input type="text" placeholder="Zip Code" class="form-control" id="zip-code"
+                      aria-describedby="zipcode">
                   </div>
                 </div>
               </div>
+              <div class="contact-info py-3">
+                <div class="row align-items-center row-gap-3">
+                   <div class="col-sm-6 col-12">
+                    <label for="email" class="form-label text-capitalize">email</label>
+                    <input type="email" placeholder="Email Address" class="form-control" id="email"
+                      aria-describedby="email">
+                  </div>
+                   <div class="col-sm-6 col-12">
+                    <label for="phone" class="form-label text-capitalize">phone</label>
+                    <input type="tel" placeholder="Phone Number" class="form-control" id="phone"
+                      aria-describedby="phone">
+                  </div>
+                </div>
+              </div>
+              <div class="form-check pt-2">
+                <input class="form-check-input check-box" type="checkbox" value="" id="changing-address">
+                <label class="form-check-label" for="changing-address">
+                  Ship to a different address
+                </label>
+              </div>
+            </form>
+
+            <div class="add-info py-4">
+              <h1 class="fs-4 text-capitalize text-sm-start text-center mb-3">Additional Info</h1>
+              <form action="">
+                <label for="notes" class="form-label text-capitalize">order notes (optional)</label>
+                <textarea name="notes" placeholder="Notes about your order, e.g. special notes for delivery" class="form-control textarea" id="notes" aria-describedby="notes"></textarea>
+              </form>
             </div>
+
           </div>
           <div class="col-md-4 col-12">
             <div class="cart-total border p-3 rounded-2">
               <h2 class="fs-6 text-capitalize ">order summery</h2>
               <div class="p-summery">
                 <div class="product">
-                      <div class="card bg-transparent position-relative border-0 text-center flex-row align-items-center flex-wrap row-gap-2">
-                        <img src="../assests/img/products/green-capsicum.webp"
-                          class=" w-25 img-fluid object-fit-contain" alt="green capsicum">
-                        <div class="card-body d-flex align-items-center justify-content-start gap-1">
-                          <div class="top-body">
-                            <h2 class="card-text text-capitalize fw-normal m-0">
-                              <p href="./p-details.html" class="m-0">green capsicum</p>
-                            </h2>
-                          </div>
-                          <span class="p-amount ">x5</span>
-                        </div>
-                        <div class="price-span">
+                  <div
+                    class="card bg-transparent position-relative border-0 text-center flex-row align-items-center flex-wrap row-gap-2">
+                    <img src="../assests/img/products/green-capsicum.webp" class=" w-25 img-fluid object-fit-contain"
+                      alt="green capsicum">
+                    <div class="card-body d-flex align-items-center justify-content-start gap-1">
+                      <div class="top-body">
+                        <h2 class="card-text text-capitalize fw-normal m-0">
+                          <p href="./p-details.html" class="m-0">green capsicum</p>
+                        </h2>
+                      </div>
+                      <span class="p-amount ">x5</span>
+                    </div>
+                    <div class="price-span">
                       <span class="">$70.00</span>
                     </div>
-                      </div>
-                      
-                    </div>
+                  </div>
+
+                </div>
                 <div class="product">
-                      <div class="card bg-transparent position-relative border-0 text-center flex-row align-items-center flex-wrap row-gap-2">
-                        <img src="../assests/img/products/red-capsicum.webp"
-                          class=" w-25 img-fluid object-fit-contain" alt="red capsicum">
-                        <div class="card-body d-flex align-items-center justify-content-start gap-1">
-                          <div class="top-body">
-                            <h2 class="card-text text-capitalize fw-normal m-0">
-                              <p href="./p-details.html" class="m-0">red capsicum</p>
-                            </h2>
-                          </div>
-                          <span class="p-amount ">x1</span>
-                        </div>
-                        <div class="price-span">
+                  <div
+                    class="card bg-transparent position-relative border-0 text-center flex-row align-items-center flex-wrap row-gap-2">
+                    <img src="../assests/img/products/red-capsicum.webp" class=" w-25 img-fluid object-fit-contain"
+                      alt="red capsicum">
+                    <div class="card-body d-flex align-items-center justify-content-start gap-1">
+                      <div class="top-body">
+                        <h2 class="card-text text-capitalize fw-normal m-0">
+                          <p href="./p-details.html" class="m-0">red capsicum</p>
+                        </h2>
+                      </div>
+                      <span class="p-amount ">x1</span>
+                    </div>
+                    <div class="price-span">
                       <span class="">$14.00</span>
                     </div>
-                      </div>
-                      
-                    </div>
+                  </div>
+
+                </div>
               </div>
-              
+
               <div class="border-bottom">
                 <div class=" subtotal py-2 d-flex flex-wrap align-items-center justify-content-between">
-                  <span class="span-gray text-capitalize" >subtotal:</span>
+                  <span class="span-gray text-capitalize">subtotal:</span>
                   <div class="price-span">
                     <span class="">$84.00</span>
                   </div>
@@ -392,38 +376,42 @@
               </div>
               <div class="border-bottom">
                 <div class="shipping py-2 d-flex flex-wrap align-items-center justify-content-between">
-                  <span class="span-gray text-capitalize" >shipping:</span>
+                  <span class="span-gray text-capitalize">shipping:</span>
                   <div class="price-span">
                     <span class="text-capitalize">free</span>
                   </div>
                 </div>
               </div>
               <div class="total py-2 pb-4 d-flex flex-wrap align-items-center justify-content-between">
-                  <span class="span-gray text-capitalize" >total:</span>
-                  <div class="price-span">
-                    <span class="text-capitalize fw-medium">$84.00</span>
-                  </div>
+                <span class="span-gray text-capitalize">total:</span>
+                <div class="price-span">
+                  <span class="text-capitalize fw-medium">$84.00</span>
                 </div>
-                <div class="payment-method">
-                  <h2 class="fs-6 text-capitalize ">payment method</h2>
-                  <form action="" class="d-flex flex-column gap-2 py-3 align-items-start">
-                    <div class="d-flex gap-1 align-items-center">
-                      <input type="radio" name="cash-on-delivery" id="delivery" value="cash on delivery">
-                    <label for="delivery" class="text-capitalize">cash on delivery</label>
-                    </div>
-                    <div class="d-flex gap-1 align-items-center">
-                      <input type="radio" name="paypal" id="paypal" value="paypal">
-                      <label for="paypal" class="text-capitalize">paypal</label>
-                    </div>
-                    <div class="d-flex gap-1 align-items-center">
-                      <input type="radio" name="amazon-pay" id="amazon-pay" value="amazon pay">
-                      <label for="amazon-pay" class="text-capitalize">amazon pay</label>
-                    </div>
-                  </form>
+              </div>
+              <div class="payment-method pb-3">
+                <h2 class="fs-6 text-capitalize ">payment method</h2>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="cash on delivery" id="delivery" checked>
+                  <label class="form-check-label text-capitalize" for="delivery">
+                    cash on delivery
+                  </label>
                 </div>
-                <a href="../pages/checkout.html" class="btn p-3 rounded-5 w-100 text-capitalize " >
-                  Place order
-                </a>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="paypal" id="paypal">
+                  <label class="form-check-label text-capitalize" for="paypal">
+                    paypal
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="amazon pay" id="amazon-pay">
+                  <label class="form-check-label text-capitalize" for="amazon-pay">
+                    amazon pay
+                  </label>
+                </div>
+              </div>
+              <a href="../pages/checkout.html" class="btn p-3 rounded-5 w-100 text-capitalize ">
+                Place order
+              </a>
             </div>
           </div>
         </div>
