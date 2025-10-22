@@ -111,9 +111,6 @@ input[type="checkbox"]{
     }
 } 
 
-input[type="email"]{
-    border:2px solid var(--gray-0);
-}
-input[type="password"]{
+input{
     border:2px solid var(--gray-0);
 }

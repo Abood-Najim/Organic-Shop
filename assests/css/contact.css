@@ -1,0 +1,15 @@
+.contact-info,.customer-msg{
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.contact-span{
+  width: 70%;
+}
+.contact-btn{
+    color: #fff;
+  transition: all 0.3s ease-in-out;
+  background-color: var(--primary);
+}
+.contact-btn:hover{
+  color: #fff;
+  background-color: var(--hard-primary);
+}
