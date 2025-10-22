@@ -1,0 +1,14 @@
+.p-amount{
+    font-size:0.75rem;
+}
+.payment-method input{
+    width: 1rem;
+    height: 1rem;
+    accent-color: var(--primary);
+    padding: 0.25rem;
+    border: none;
+}
+.payment-method input:focus{
+    border: 1px solid #fff;
+    
+}
