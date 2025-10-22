@@ -108,3 +108,15 @@
   position: static;
 }
 }
+.cart-total .btn{
+  background-color: var(--primary);
+  font-weight: var(--font-semibold);
+  color: #fff;
+}
+.cart-total .btn{
+  transition: all 0.3s ease-in-out;
+}
+.cart-total .btn:hover{
+  color: #fff;
+  background-color: var(--hard-primary);
+}
