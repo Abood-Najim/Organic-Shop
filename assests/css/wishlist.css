@@ -14,7 +14,20 @@
   color: var(--danger);
   background-color: rgba(234, 75, 72, 0.2);
 }
-
+.quantity-btn{
+  width:1rem;
+  height:1rem;
+  padding: 1rem;
+  border: none;
+  font-size: 0.75rem;
+  transition: all 0.3s ease-in-out;
+}
+.quantity-btn:hover{
+  background-color: var(--gray-2);
+}
+.quantity .quantity-num:focus{
+  outline-color: var(--primary);
+}
 .shopping-btns{
   color: #fff;
   transition: all 0.3s ease-in-out;
