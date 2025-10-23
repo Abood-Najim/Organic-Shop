@@ -1,0 +1,9 @@
+.homeback-btn{
+    color: #fff;
+  transition: all 0.3s ease-in-out;
+  background-color: var(--primary);
+}
+.homeback-btn:hover{
+  color: #fff;
+  background-color: var(--hard-primary);
+}
