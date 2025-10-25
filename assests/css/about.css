@@ -1,0 +1,100 @@
+.about-third .btn{
+  color: #fff;
+  background-color: var(--primary);
+  width: fit-content;
+  padding-left: 6%;
+  padding-right: 6%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  transition: all 0.3s ease-in-out;
+}
+.about-third .btn:hover{
+  background-color: var(--hard-primary);
+}
+
+.btn.botton2{
+  color: var(--gray-9);
+  background-color: #fff;
+  width: fit-content;
+  padding:0.5rem;
+  border: 1px solid var(--gray-1);
+  transition: all 0.3s ease-in-out;
+}
+.btn.botton2:hover{
+  color: #fff;
+  background-color: var(--primary);
+  border-color: var(--primary);
+}
+.g-gray{
+  color: var(--g-gray-9);
+}
+.member-post {
+  transition: all 0.3s ease-in-out;
+  width: fit-content;
+  img{
+    transition: all 0.3s ease-in-out;
+  }
+}
+.member-post i{
+  color: var(--gray-0);
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+  width: 1rem;
+  height: 1rem;
+}
+.member-post:hover{
+  img{
+    filter: brightness(50%);
+  }
+  i{
+    opacity: 1;
+  }
+}
+.member-post a{
+  transition: all 0.3s ease-in-out ;
+}
+.member-post a:hover{
+  background-color: var(--primary);
+}
+.h-size{
+  font-size: 1rem;
+}
+.span-size{
+  font-size: 0.75rem;
+}
+.our-team{
+  background-color: #f7f7f7;
+}
+.hovershadow{
+  transition: all 0.3s ease-in-out;
+  outline: 1px solid var(--gray-1);
+}
+.hovershadow:hover{
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  outline-color:transparent ;
+}
+@media screen and (max-width:1250px){
+.span-size{
+  font-size: 0.55rem;
+}
+.h-size{
+  font-size: 0.75rem;
+}
+}
+.left-arrow-1{
+  display: block;
+}
+.left-arrow-2{
+  display: none;
+}
+@media screen and (max-width:325px){
+  .left-arrow-1{
+    display: none;
+  }
+  .left-arrow-2{
+    display: block;
+  }
+  .team-social .col-8{
+    width: 100%;
+  }
+}
