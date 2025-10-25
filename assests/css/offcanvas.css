@@ -20,7 +20,13 @@
 .off-font{
   font-size:0.5rem ;
 }
-img{
+.off-head{
+  font-size: 0.75rem;
+}
+.offcanvas img{
+  filter: drop-shadow(4px 4px 6px rgba(0, 0, 0, 0.3));
+}
+.product img{
   filter: drop-shadow(4px 4px 6px rgba(0, 0, 0, 0.3));
 }
 .check-btn{
@@ -57,3 +63,18 @@ img{
   color: var(--hard-primary);
   background-color:rgba(32, 181, 38, 0.4);
 }
+.card{
+    flex-direction: row;
+  }
+/* @media screen and (max-width: 340px) {
+  
+} */
+@media screen and (max-width: 200px) {
+  .total-p-price{
+  flex-direction: column;
+}
+.card{
+    flex-direction: column;
+  }
+}
+
