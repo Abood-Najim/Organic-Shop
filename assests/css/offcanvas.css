@@ -63,7 +63,7 @@
   color: var(--hard-primary);
   background-color:rgba(32, 181, 38, 0.4);
 }
-.card{
+.offcanvas .card{
     flex-direction: row;
   }
 /* @media screen and (max-width: 340px) {
@@ -73,7 +73,7 @@
   .total-p-price{
   flex-direction: column;
 }
-.card{
+.offcanvas .card{
     flex-direction: column;
   }
 }

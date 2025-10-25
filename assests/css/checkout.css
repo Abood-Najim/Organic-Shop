@@ -14,3 +14,9 @@ input[type="checkbox"] {
 .optional{
     font-size: 0.5rem;
 }
+.form-check-input:checked {
+    background-color: var(--primary);
+    border: 3px solid #fff;
+    outline: 1px solid var(--primary);
+    box-shadow: none;
+}
