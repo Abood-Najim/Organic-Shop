@@ -1,0 +1,59 @@
+.quantity-btn{
+  width:1rem;
+  height:1rem;
+  padding: 0.75rem;
+  border: none;
+  font-size: 0.75rem;
+  transition: all 0.3s ease-in-out;
+  border: 1px solid var(--gray-2);
+  color:var(--gray-6);
+  background-color: var(--gray-0);
+}
+.quantity-btn:hover{
+  background-color: var(--danger);
+  color: #fff;
+  border-color: transparent;
+}
+.quantity .quantity-num:focus{
+  outline-color: var(--primary);
+}
+.off-font{
+  font-size:0.5rem ;
+}
+img{
+  filter: drop-shadow(4px 4px 6px rgba(0, 0, 0, 0.3));
+}
+.check-btn{
+  color: #fff;
+  background-color: var(--primary);
+  transition: all 0.3s ease-in-out;
+}
+.check-btn:hover{
+  color: #fff;
+  background-color: var(--hard-primary);
+}
+.btn.check-btn:active{
+  color: #fff;
+  background-color: var(--hard-primary);
+}
+.check-btn:focus{
+  color: #fff;
+  background-color: var(--hard-primary);
+}
+.btn.gtc{
+    color: var(--primary);
+  background-color:rgba(32, 181, 38, 0.2);
+  transition: all 0.3s ease-in-out;
+}
+.btn.gtc:hover{
+  color: var(--hard-primary);
+  background-color:rgba(32, 181, 38, 0.4);
+}
+.btn.gtc:active{
+  color: var(--hard-primary);
+  background-color:rgba(32, 181, 38, 0.4);
+}
+.btn.gtc:focus{
+  color: var(--hard-primary);
+  background-color:rgba(32, 181, 38, 0.4);
+}
