@@ -991,5 +991,19 @@ color: var(--gray-5);
     box-shadow:none;
 }
 option:focus{
- background-color: var(--primary);
+background-color: var(--primary);
+}
+
+/* for the hotdeals */
+.r-uside{
+  height: 50%;
+}
+.r-bside{
+  height: 50%;
+}
+.r-uside .card{
+  height: 100%;
+}
+.r-bside .card{
+  height: 100%;
 }
