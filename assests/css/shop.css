@@ -94,18 +94,44 @@
 .sale-products .card{
   transition: all 0.3s ease-in-out;
 }
+.small-sale.products{
+  display: none;
+  transition: all 0.3s ease-in-out;
+}
+.small-sale.products .shopping-btns{
+    border: 1px solid var(--gray-1);
+    transition: all 0.3s ease-in-out;
+}
+.small-sale.products .shopping-btns:hover{
+    border: 1px solid var(--primary);
+}
+.r-stars,.price-span{
+    transition: all 0.3s ease-in-out;
+}
 .sale-products .card:hover{
   box-shadow: 0 0 12px rgba(32, 181, 38, 0.32);
   --bs-card-border-color:var(--hard-primary);
+  .small-sale.products{
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+    .r-stars,.price-span{
+        display: none;
+}
 }
 .card-body h3:hover a{
   color: var(--hard-primary);
 }
+
 .products .card .out-of-stock{
   top: 3%;
   left: 4%;
   background-color: var(--gray-9);
 }
+
+
+
 .page-nums .page{
     color: var(--gray-9);
     display: flex;
@@ -150,6 +176,7 @@
         font-size: 0.75rem;
     }
 }
+
 @media screen and (max-width: 320px) {
     .r-products{
     display: flex;
@@ -164,4 +191,23 @@
 
 .r-products .filter{
     width: 5rem;
+}
+.p-amount{
+    font-size:0.75rem;
+}
+.check-box:checked{
+    border: 0;
+    outline: 1px solid var(--primary);
+}
+.check-box:hover{
+    outline: 1px solid var(--primary);
+}
+input[type="checkbox"] {
+    transform: scale(1);
+}
+.all-categories .form-check-input:checked {
+    background-color: var(--primary);
+    border: 3px solid #fff;
+    outline: 1px solid var(--primary);
+    box-shadow: none;
 }
